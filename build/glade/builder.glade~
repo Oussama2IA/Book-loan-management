@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="add_member">
+    <property name="width-request">450</property>
+    <property name="height-request">250</property>
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="deletable">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkEntry" id="e_name">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="e_email">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="e_address">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Full name</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">31</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">email</property>
+          </object>
+          <packing>
+            <property name="x">21</property>
+            <property name="y">82</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">address</property>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">132</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="m_add_apply">
+            <property name="width-request">30</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image-position">bottom</property>
+            <property name="always-show-image">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-apply</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">235</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="m_add_close">
+            <property name="width-request">10</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-quit</property>
+                <property name="icon_size">3</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">289</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="lower">1</property>
+    <property name="upper">100</property>
+    <property name="value">1</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+  </object>
+  <object class="GtkWindow" id="add_book">
+    <property name="width-request">450</property>
+    <property name="height-request">250</property>
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="deletable">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkEntry" id="e_category">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="e_title">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="e_author">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">category</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">31</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">title</property>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">82</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">author</property>
+          </object>
+          <packing>
+            <property name="x">17</property>
+            <property name="y">132</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="b_add_apply">
+            <property name="width-request">30</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image-position">bottom</property>
+            <property name="always-show-image">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-apply</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">245</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="b_add_close">
+            <property name="width-request">10</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-quit</property>
+                <property name="icon_size">3</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">stock</property>
+          </object>
+          <packing>
+            <property name="x">19</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="e_stock">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">3</property>
+            <property name="adjustment">adjustment1</property>
+            <property name="numeric">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTreeStore" id="b_tree_store">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gint"/>
+      <!-- column-name category -->
+      <column type="gchararray"/>
+      <!-- column-name title -->
+      <column type="gchararray"/>
+      <!-- column-name author -->
+      <column type="gchararray"/>
+      <!-- column-name stock -->
+      <column type="gint"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="b_window">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="default-width">1100</property>
+    <property name="default-height">650</property>
+    <property name="deletable">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="b_back_button">
+            <property name="width-request">60</property>
+            <property name="height-request">71</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-go-back</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">950</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSearchEntry" id="b_search_bar">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="primary-icon-name">edit-find-symbolic</property>
+            <property name="primary-icon-activatable">False</property>
+            <property name="primary-icon-sensitive">False</property>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">48</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="b_save_button">
+            <property name="width-request">60</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image-position">bottom</property>
+            <property name="always-show-image">True</property>
+            <child>
+              <object class="GtkImage" id="save_picture1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-floppy</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">950</property>
+            <property name="y">314</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="b_add_button">
+            <property name="width-request">30</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-add</property>
+                <property name="icon_size">5</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="width-request">805</property>
+            <property name="height-request">485</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkTreeView" id="b_tree_view">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="model">b_tree_store</property>
+                    <property name="enable-search">False</property>
+                    <property name="search-column">1</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="b_select"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="book_id">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">50</property>
+                        <property name="title" translatable="yes">ID</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="b_column_1"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="category">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">150</property>
+                        <property name="title" translatable="yes">category</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="b_column_2"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="title">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">350</property>
+                        <property name="title" translatable="yes">title</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="b_column_3"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="author">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">200</property>
+                        <property name="title" translatable="yes">author</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="b_column_4"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="stock">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">50</property>
+                        <property name="title" translatable="yes">stock</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="b_column_5"/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">60</property>
+            <property name="y">108</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="b_delete_button">
+            <property name="width-request">30</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-delete</property>
+                <property name="icon_size">5</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="b_edit_button">
+            <property name="width-request">50</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-edit</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTreeStore" id="m_tree_store">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gint"/>
+      <!-- column-name full -->
+      <column type="gchararray"/>
+      <!-- column-name email -->
+      <column type="gchararray"/>
+      <!-- column-name adress -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="m_window">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="default-width">1100</property>
+    <property name="default-height">650</property>
+    <property name="deletable">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="m_back_button">
+            <property name="width-request">60</property>
+            <property name="height-request">71</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-go-back</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">950</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSearchEntry" id="m_search_bar">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="primary-icon-name">edit-find-symbolic</property>
+            <property name="primary-icon-activatable">False</property>
+            <property name="primary-icon-sensitive">False</property>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">48</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="m_save_button">
+            <property name="width-request">60</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image-position">bottom</property>
+            <property name="always-show-image">True</property>
+            <child>
+              <object class="GtkImage" id="save_picture">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-floppy</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">950</property>
+            <property name="y">314</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="m_add_button">
+            <property name="width-request">30</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-add</property>
+                <property name="icon_size">5</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="width-request">805</property>
+            <property name="height-request">485</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkTreeView" id="m_tree_view">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="model">m_tree_store</property>
+                    <property name="enable-search">False</property>
+                    <property name="search-column">1</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="m_select"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="member_id">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">50</property>
+                        <property name="title" translatable="yes">ID</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="m_column_1"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="name">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">200</property>
+                        <property name="title" translatable="yes">full name</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="m_column_2"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="email">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">250</property>
+                        <property name="title" translatable="yes">email</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="m_column_3"/>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="address">
+                        <property name="sizing">fixed</property>
+                        <property name="fixed-width">300</property>
+                        <property name="title" translatable="yes">address</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="m_column_4"/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">60</property>
+            <property name="y">108</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="m_delete_button">
+            <property name="width-request">30</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-delete</property>
+                <property name="icon_size">5</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="m_edit_button">
+            <property name="width-request">50</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-edit</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">44</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="main_window">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">500</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="member_button">
+            <property name="width-request">120</property>
+            <property name="height-request">120</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\member.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="book_button">
+            <property name="width-request">120</property>
+            <property name="height-request">110</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\book.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="loan_button">
+            <property name="width-request">120</property>
+            <property name="height-request">115</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\loan.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">330</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">pictures\library.png</property>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="close_button">
+            <property name="width-request">60</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="stock">gtk-quit</property>
+                <property name="icon_size">6</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">858</property>
+            <property name="y">277</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
