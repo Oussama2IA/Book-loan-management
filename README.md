@@ -2,6 +2,11 @@
 > This project is about implementing a book loan management application with **C** using **GTK+ 3**
 
 # Screenshots
+![Main menu](screenshots/main.png)
+
+![Member session](screenshots/members.png)
+
+![Book session](screenshots/books.png)
 
 # GTK+ 3.0 instalation
 ## Linux instalation
